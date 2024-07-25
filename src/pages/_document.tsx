@@ -7,7 +7,9 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        DOCUMENT UPDATE
+        DOCUMENT UPDATE DOCUMENT UPDATE
+        <b />
+        INSIDEPAGE UPDATE
       </body>
     </Html>
   );
