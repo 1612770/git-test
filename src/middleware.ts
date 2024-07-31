@@ -6,7 +6,7 @@ export async function middleware(request: NextRequest) {
   console.log("middle", xDeploymentSecureKey?.value);
 
   if (xDeploymentSecureKey?.value !== process.env.VERCEL_GIT_COMMIT_SHA) {
-    return NextResponse.redirect("http://localhost:3000/protect");
+    return NextResponse.redirect("https://git-test-rouge.vercel.app/protect");
   }
 
   return NextResponse.next();
