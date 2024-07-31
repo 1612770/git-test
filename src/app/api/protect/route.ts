@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   const key = data.get("key");
   if (key === process.env.VERCEL_GIT_COMMIT_SHA) {
     const response = NextResponse.redirect(
-      "https://git-test-rouge.vercel.app:3000",
+      "https://git-test-rouge.vercel.app",
       {
         status: 302,
       }
